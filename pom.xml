@@ -13,6 +13,8 @@
     <artifactId>spring-boot-microservice-test-common</artifactId>
     <version>${revision}</version>
 
+    <name>spring-boot-microservice-test-common</name>
+
     <properties>
         <revision>1.0-SNAPSHOT</revision>
     </properties>
