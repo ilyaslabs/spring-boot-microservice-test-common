@@ -7,11 +7,11 @@
     <parent>
         <groupId>io.github.ilyaslabs</groupId>
         <artifactId>spring-boot-microservice-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>spring-boot-microservice-test-common</artifactId>
-    <version>${revision}</version>
+    <version>1.0-SNAPSHOT</version>
 
     <name>spring-boot-microservice-test-common</name>
 
@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-test</artifactId>
+            <artifactId>spring-boot-starter-webmvc-test</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.retry</groupId>
@@ -30,11 +30,12 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-starter-aspectj</artifactId>
         </dependency>
     </dependencies>
 

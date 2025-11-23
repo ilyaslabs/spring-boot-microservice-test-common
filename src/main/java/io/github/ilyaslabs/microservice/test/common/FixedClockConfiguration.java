@@ -21,18 +21,16 @@ import java.time.ZoneId;
 public class FixedClockConfiguration {
 
     /**
-     * Creates a {@link MutableClock} bean with a fixed initial instant and UTC time zone.
-     * <p>
-     * The created clock is initialized with the minimum possible {@link Instant} (`Instant.MIN`)
-     * and is set to the "UTC" time zone.
-     * This clock is mutable, allowing modifications to its instant, making it particularly
-     * useful for testing scenarios where control over time is necessary.
+     * Provides a {@link MutableClock} instance initialized with a fixed instant and time zone.
+     * This clock starts at the epoch instant (1970-01-01T00:00:00Z) and operates in the UTC
+     * time zone, making it suitable for testing scenarios where a predictable and modifiable
+     * clock is required.
      *
-     * @return a {@link MutableClock} instance initialized with `Instant.MIN` and the "UTC" time zone
+     * @return a {@link MutableClock} instance initialized with the epoch instant and UTC time zone
      */
     @Bean
     MutableClock clock() {
-        return new MutableClock(Instant.MIN, ZoneId.of("UTC"));
+        return new MutableClock(Instant.EPOCH, ZoneId.of("UTC"));
     }
 
     /**
