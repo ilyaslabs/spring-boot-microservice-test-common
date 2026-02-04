@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>spring-boot-microservice-test-common</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${revision}</version>
 
     <name>spring-boot-microservice-test-common</name>
 
